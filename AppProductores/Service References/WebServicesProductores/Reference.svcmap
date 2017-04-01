@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f98c053f-c871-41d9-90e0-cb9a695aafd6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50629/AgroMarketService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AgroMarketService.xsd" MetadataType="Schema" ID="7259586a-3667-41d0-b069-d8b98023bc8d" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AgroMarketService1.xsd" MetadataType="Schema" ID="13bffdda-8cef-454c-8683-8dfbbbbe1235" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AgroMarketService2.xsd" MetadataType="Schema" ID="499efec8-6827-4c73-be12-16c6b27ef13a" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AgroMarketService3.xsd" MetadataType="Schema" ID="2d1455a9-033d-43fe-9f75-6ddd47b712d8" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AgroMarketService4.xsd" MetadataType="Schema" ID="e914a2f1-5887-4a7b-8536-9e0d43e1291d" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AgroMarketService.wsdl" MetadataType="Wsdl" ID="ab633c8c-8758-48ce-80bf-c5cbee14df95" SourceId="1" SourceUrl="http://localhost:50629/AgroMarketService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

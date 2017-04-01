@@ -1,0 +1,6 @@
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\obj\Debug\AppProductores.csprojResolveAssemblyReference.cache
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\bin\AppProductores.dll.config
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\bin\AppProductores.dll
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\bin\AppProductores.pdb
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\obj\Debug\AppProductores.dll
+C:\Users\Jesus Rodriguez\Desktop\Desktop Jesus\UNI Forder Primer Semestre 2017\Integracion Propietaria\Projecto Final\AppProductores\AppProductores\obj\Debug\AppProductores.pdb
