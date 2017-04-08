@@ -66,6 +66,7 @@
     <Content Include="CreateOffer.aspx" />
     <Content Include="css\CreateOffer.css" />
     <Content Include="Home.aspx" />
+    <Content Include="IntencionesCompras.aspx" />
     <Content Include="packages.config" />
     <Content Include="Service References\WebServicesProductores\AppProductores.WebServicesProductores.ErrorResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -119,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Login_Pages.aspx" />
-    <Content Include="Prueba.aspx" />
     <Content Include="css\Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -138,6 +138,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IntencionesCompras.aspx.cs">
+      <DependentUpon>IntencionesCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntencionesCompras.aspx.designer.cs">
+      <DependentUpon>IntencionesCompras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login_Pages.aspx.cs">
       <DependentUpon>Login_Pages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,13 +153,6 @@
       <DependentUpon>Login_Pages.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prueba.aspx.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Prueba.aspx.designer.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Service References\WebServicesProductores\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

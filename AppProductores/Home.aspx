@@ -83,6 +83,7 @@ background-color: #777777;
 <div class="sub_menu">
 <ul>
 <li><a href="CreateOffer.aspx">Crear Oferta</a></li>
+<li><a href="IntencionesCompras.aspx">Intenciones de Compra</a></li>
 
 </ul>
 </div>

@@ -30,6 +30,7 @@ namespace AppProductores
             {             
 
                 int Cantidad = Convert.ToInt32(txtCantidad.Text);
+                //int TipoUnidad = Convert.ToInt32(DropDownList1.Text);
                 int TipoUnidad = Convert.ToInt32(txtTipoUnidad.Text);
                 decimal PrecioUnidad = Convert.ToDecimal(txtPrecioUnidad.Text);
                 string CodigoProducto = txtCodigoProducto.Text;
@@ -51,8 +52,8 @@ namespace AppProductores
 
 
 
-                var _response = client.CreateOffer(userName, token, Convert.ToInt32(txtCantidad.Text), 
-                    Convert.ToInt32(txtTipoUnidad.Text), Convert.ToDecimal(txtPrecioUnidad.Text), txtCodigoProducto.Text);
+                var _response = client.CreateOffer(userName, token, Convert.ToInt32(txtCantidad.Text), Convert.ToInt32(txtTipoUnidad.Text),
+                    Convert.ToDecimal(txtPrecioUnidad.Text), txtCodigoProducto.Text);
 
                 if (_response.Error.Code != "AG000")
                 {
@@ -75,6 +76,51 @@ namespace AppProductores
         protected void txtPrecioUnidad_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+          
+
+
+        }
+
+        protected void DropDownList1_Load(object sender, EventArgs e)
+        {
+         /*   //User information and Token Session
+            string userName = string.Empty;
+            string token = string.Empty;
+
+            if (Session["userName"] != null)
+            {
+                userName = Session["userName"].ToString();
+            }
+
+            if (Session["token"] != null)
+            {
+                token = Session["token"].ToString();
+            }
+
+
+
+            var  _response = client.GetUnitTypes(userName, token);
+
+            if (_response.Error.Code != "AG000")
+            {
+                // TOO: Manejar error
+
+            }
+            else
+            {
+                DropDownList1.DataSource = _response.UnitTypes.ToList();
+             //   DropDownList1.DataTextField = "Description";
+                DropDownList1.DataValueField = "Id";
+                DropDownList1.DataBind();
+            }
+
+
+    */
         }
     }
 }

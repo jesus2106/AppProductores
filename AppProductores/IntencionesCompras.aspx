@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateOffer.aspx.cs" Inherits="AppProductores.CreateOffer" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IntencionesCompras.aspx.cs" Inherits="AppProductores.IntencionesCompras" %>
 
 <!DOCTYPE html>
 
@@ -32,7 +32,6 @@ $('.sub_menu', this).stop(true, true).slideUp();  /*slideUp the subitems on mous
 <li><a href="CreateOffer.aspx">Crear Oferta</a></li>
 <li><a href="IntencionesCompras.aspx">Intenciones de Compra</a></li>
 
-
 </ul>
 </div>
 </li>
@@ -54,67 +53,27 @@ $('.sub_menu', this).stop(true, true).slideUp();  /*slideUp the subitems on mous
 
 <div class="form-style-5" runat="server">
         </div>
-<fieldset class="auto-style1" >
-
-<legend><span class="number">1</span>Crear Oferta</legend>Cantidad<asp:TextBox ID="txtCantidad" runat="server" ></asp:TextBox>
-
-    <br />
-    <br />
-
-Tipo Unidad<asp:TextBox ID="txtTipoUnidad" runat="server"></asp:TextBox>
-
-    <br />
-    <br />
-
-Precio Unidad<asp:TextBox ID="txtPrecioUnidad" runat="server" ></asp:TextBox>
-
-&nbsp;<br />
-    <br />
-    <br />
-    Codigo Producto<asp:TextBox ID="txtCodigoProducto" runat="server" ></asp:TextBox>
+&nbsp;</div><br />
 
 
-    <br />
-    <br />
-    <asp:Button ID="btnCreateOffer" runat="server" Text="Crear Oferta" OnClick="btnCreateOffer_Click" />
 
+        <div>
 
-</fieldset>
-    </form>
+<asp:GridView runat="server" ID="IntencionGrid"
+        DataKeyNames="Id" 
+        AutoGenerateColumns="false">
+        <Columns>
+            <asp:BoundField DataField="Id"  HeaderText="ID" />
+            <asp:BoundField DataField="BuyerId"  HeaderText="Id Comprado" Visible="false" />
+            <asp:BoundField DataField="Buyer"  HeaderText=" COmprador" />
+            <asp:BoundField DataField="DateCreation"  HeaderText=" Fecha creada" />    
+            <asp:BoundField DataField="IntentionsToSellId" Visible="false" />
+            <asp:BoundField DataField="ExpirationDate"  HeaderText=" Fecha de Vencimiento" />      
+        </Columns>
+    </asp:GridView>
 </div>
-   
-
-           
 
 
-    
-
-
-
-
-
-
-
-
-
-       
 
     </form>
 
-           
-
-
-    
-
-
-
-
-
-
-
-
-
-       
-
-</body>
-</html>
