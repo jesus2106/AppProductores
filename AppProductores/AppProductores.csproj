@@ -65,6 +65,8 @@
   <ItemGroup>
     <Content Include="CreateOffer.aspx" />
     <Content Include="css\CreateOffer.css" />
+    <Content Include="css\Grid.css" />
+    <Content Include="HistorialVenta.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="IntencionesCompras.aspx" />
     <Content Include="packages.config" />
@@ -130,6 +132,13 @@
     </Compile>
     <Compile Include="CreateOffer.aspx.designer.cs">
       <DependentUpon>CreateOffer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialVenta.aspx.cs">
+      <DependentUpon>HistorialVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistorialVenta.aspx.designer.cs">
+      <DependentUpon>HistorialVenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

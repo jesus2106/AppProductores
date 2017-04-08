@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateOffer.aspx.cs" Inherits="AppProductores.CreateOffer" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HistorialVenta.aspx.cs" Inherits="AppProductores.HistorialVenta" %>
 
 <!DOCTYPE html>
 
@@ -6,6 +6,7 @@
 <head runat="server">
 <link rel="stylesheet" type="text/css" href="css/CreateOffer.css" />
 <link rel="stylesheet" type="text/css" href="css/Style.css"/>
+<link rel="stylesheet" type="text/css" href="css/Grid.css"/>
 
 <title>Create Offer</title>
 
@@ -54,69 +55,39 @@ $('.sub_menu', this).stop(true, true).slideUp();  /*slideUp the subitems on mous
 
 <div class="form-style-5" runat="server">
         </div>
-<fieldset class="auto-style1" >
-
-<legend><span class="number">1</span>Crear Oferta</legend>Cantidad<asp:TextBox ID="txtCantidad" runat="server" ></asp:TextBox>
-
-    <br />
-    <br />
-
-Tipo Unidad<asp:DropDownList ID="DdlTipoUnidad" runat="server" OnLoad="DdlTipoUnidad_Load">
-    </asp:DropDownList>
-
-    <br />
-    <br />
-
-Precio Unidad<asp:TextBox ID="txtPrecioUnidad" runat="server" ></asp:TextBox>
-
-&nbsp;<br />
-    <br />
-    <br />
-    Codigo Producto<asp:DropDownList ID="DdLCodigoProducto" runat="server" OnLoad="DdLCodigoProducto_Load">
-    </asp:DropDownList>
+&nbsp;</div><br />
 
 
-    <br />
-    <br />
-    <asp:Button ID="btnCreateOffer" runat="server" Text="Crear Oferta" OnClick="btnCreateOffer_Click" />
 
+        <div>
 
-</fieldset>
-    </form>
+<asp:GridView runat="server" ID="HistoryGrid"
+        DataKeyNames="Id" 
+        AutoGenerateColumns="false"  CssClass="mydatagrid" PagerStyle-CssClass="pager"  HeaderStyle-CssClass="header" RowStyle-CssClass="rows" AllowPaging="True"  >
+        <Columns>
+            <asp:BoundField DataField="IntentionBuyId"  HeaderText="ID" />
+            <asp:BoundField DataField="IntentionSellId"  HeaderText="Intension ID" />
+            <asp:BoundField DataField="BuyerId"  HeaderText="Comprador ID" />    
+            <asp:BoundField DataField="CreationDate"  HeaderText="Fecha Creada" />
+            <asp:BoundField DataField="Buyer" HeaderText="Nombre Comprador" />
+            <asp:BoundField DataField="SellerId"  HeaderText="Vendedor ID" />     
+            <asp:BoundField DataField="Seller"  HeaderText="Nombre Vendedor" />           
+        </Columns>
+        <EditRowStyle HorizontalAlign="Center" />
+        <HeaderStyle CssClass="header" />
+        <PagerStyle CssClass="pager" />
+        <RowStyle CssClass="rows" />
+    </asp:GridView>
+            <br />
+            <br />
 </div>
-   
 
-           
-
-
-    
+        <div>
 
 
+        </div>
 
-
-
-
-
-
-
-       
 
     </form>
 
-           
 
-
-    
-
-
-
-
-
-
-
-
-
-       
-
-</body>
-</html>

@@ -31,13 +31,13 @@ namespace AppProductores {
         protected global::System.Web.UI.WebControls.TextBox txtCantidad;
         
         /// <summary>
-        /// txtTipoUnidad control.
+        /// DdlTipoUnidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTipoUnidad;
+        protected global::System.Web.UI.WebControls.DropDownList DdlTipoUnidad;
         
         /// <summary>
         /// txtPrecioUnidad control.
@@ -49,13 +49,13 @@ namespace AppProductores {
         protected global::System.Web.UI.WebControls.TextBox txtPrecioUnidad;
         
         /// <summary>
-        /// txtCodigoProducto control.
+        /// DdLCodigoProducto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoProducto;
+        protected global::System.Web.UI.WebControls.DropDownList DdLCodigoProducto;
         
         /// <summary>
         /// btnCreateOffer control.

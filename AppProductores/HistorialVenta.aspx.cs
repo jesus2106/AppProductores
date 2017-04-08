@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace AppProductores
 {
-    public partial class IntencionesCompras : System.Web.UI.Page
+    public partial class HistorialVenta : System.Web.UI.Page
     {
         private WebServicesProductores.AgroMarketServiceClient client = new WebServicesProductores.AgroMarketServiceClient();
         string userName = string.Empty;
@@ -15,11 +15,8 @@ namespace AppProductores
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            
-
             //User information and Token Session
-           
+
 
             if (Session["userName"] != null)
             {
@@ -31,8 +28,8 @@ namespace AppProductores
                 token = Session["token"].ToString();
             }
 
-            var _response = client.GetAllIntentionsToBuy(userName, token);
-           // var response = client.GetIntentionToBuy(userName,token);
+            var _response = client.GetAllSells(userName, token);
+            // var response = client.GetIntentionToBuy(userName,token);
 
             if (_response.Error.Code != "AG000")
             {
@@ -42,15 +39,20 @@ namespace AppProductores
             else
             {
 
-                IntencionGrid.DataSource = _response.Intentions.ToList();
-                IntencionGrid.DataBind();
+                HistoryGrid.DataSource = _response.SellList.ToList();
+                HistoryGrid.DataBind();
             }
 
-        }
 
-        protected void IntencionGrid_SelectedIndexChanged(object sender, EventArgs e)
-        {
+
+
+
+
+
+
+
+
 
         }
     }
-    }
+}

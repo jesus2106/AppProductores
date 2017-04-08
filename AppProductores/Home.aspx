@@ -83,23 +83,24 @@ background-color: #777777;
 <div class="sub_menu">
 <ul>
 <li><a href="CreateOffer.aspx">Crear Oferta</a></li>
-<li><a href="IntencionesCompras.aspx">Intenciones de Compra</a></li>
+
+
 
 </ul>
 </div>
 </li>
-<li><a href="#">Tutorials</a>
+<li><a href="#">Compras</a>
 <div class="sub_menu">
 <ul>
-<li><a href="#">Asp.net Tutorials</a></li>
-<li><a href="#">Jquery Tutorials</a></li>
+<li><a href="IntencionesCompras.aspx">Intenciones de Compra</a></li>
+<!--<li><a href="#">Jquery Tutorials</a></li>
 <li><a href="#">Sql Tutorials</a></li>
-<li><a href="#">Other tutorials</a></li>
+<li><a href="#">Other tutorials</a></li>-->
 </ul>
 </div>
 </li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Advertise</a></li>
+<!--<li><a href="#">Contact</a></li>-->
+<li><a href="HistorialVenta.aspx">Historial</a></li>
 </ul>
 </div>
 </body>
